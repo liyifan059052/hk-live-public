@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hong Kong Live</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Hong Kong Live</h1>
+    <p class="summary">This dashboard will show live Hong Kong information in a set of simple cards.</p>
+    <section class="cards" aria-label="Dashboard cards">
+      <article>
+        <h2>Weather</h2>
+        <p id="weather-temperature" class="weather-temperature">—</p>
+        <p id="weather-time" class="weather-time" hidden></p>
+        <p id="weather-error" class="weather-error" hidden>Weather data unavailable</p>
+      </article>
+      <article>
+        <h2>Transport</h2>
+        <p id="transport-dest" class="transport-dest" hidden></p>
+        <p id="transport-minutes" class="transport-minutes">—</p>
+        <p id="transport-error" class="transport-error" hidden>Transport data unavailable</p>
+      </article>
+      <article>
+        <h2>Air Quality</h2>
+        <p id="air-station" class="air-station" hidden></p>
+        <p id="air-aqhi" class="air-aqhi">—</p>
+        <p id="air-risk" class="air-risk" hidden></p>
+        <p id="air-error" class="air-error" hidden>Air Quality data unavailable</p>
+      </article>
+    </section>
+    <p class="identity">Yifan Li<br>MSc in Electrical and Electronic Engineering (Communications Engineering Stream)</p>
+    <footer>Data from the Hong Kong Government and DATA.GOV.HK.</footer>
+  </main>
+</body>
+</html>
